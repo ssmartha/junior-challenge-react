@@ -5,7 +5,7 @@
 ## 👩‍💻 Proyect Overview
 
 - Crear una SPA
-- Utilizar fetch o axios para consultar una apihttps://dragon-ball-api.herokuapp.com/documentation​ o ​https://pokeapi.co/
+- Utilizar fetch o axios para consultar una api https://dragon-ball-api.herokuapp.com/documentation​ o ​https://pokeapi.co/
 - Listar todos los personajes de la api
 - Al hacer click sobre el personaje abrir una página nueva y mostrar toda la informacióndel personaje
 - Utilizar Css, puede ser css, sass o styled component
