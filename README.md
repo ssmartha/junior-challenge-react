@@ -1,6 +1,6 @@
-<img src="https://getduna.com/svg/duna-logo.svg" width="300">
+<img src="https://uploads-ssl.webflow.com/62e806ed6cc7b20ca6dc2b93/62fca8262c51370eb1406a98_deuna_w.png" width="300">
 
-# React Senior Challenge
+# React Junior Challenge
 
 ## 👩‍💻 Proyect Overview
 
@@ -9,9 +9,6 @@
 - Listar todos los personajes de la api
 - Al hacer click sobre el personaje abrir una página nueva y mostrar toda la informacióndel personaje
 - Utilizar Css, puede ser css, sass o styled component
-
-Recuerda que no tenemos un timeline, reclutamos on a rolling basis. Recuerda de actualizar el form que recibiste en tu correo cuando termines la prueba.
-Al completar la prueba tecinca avisanos por aca (usa el mismo correo): https://airtable.com/shrfLtBYqMg3jY3dc
 
 ## 🎯 Puntos
 
@@ -27,7 +24,7 @@ Al completar la prueba tecinca avisanos por aca (usa el mismo correo): https://a
 
 ## 📃 Disclaimer
 
-Esto es un desafío técnico sin proposito comercial y D-Una de ninguna manera:
+Esto es un desafío técnico sin proposito comercial y DEUNA de ninguna manera:
 
 - Compartirá o usará tu código
 - Obligarte a realizar este desafío
