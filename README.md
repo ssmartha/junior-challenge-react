@@ -4,6 +4,7 @@
 
 ## 👩‍💻 Proyect Overview
 
+- Crear un fork de este proyecto
 - Crear una SPA
 - Utilizar fetch o axios para consultar una api https://dragon-ball-api.herokuapp.com/documentation​ o ​https://pokeapi.co/
 - Listar todos los personajes de la api
