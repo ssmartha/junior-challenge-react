@@ -14,3 +14,18 @@ export async function getPokemonsData(startingRange){
 
     return finalData;
 }
+
+export async function getPokemonDataById(pokemonId){
+    const response = await fetch(`${BASE_URI}pokemon/${pokemonId}`)
+    const data = await response.json();
+    
+    // const promises = data.results.map(async(pokemon)=>{
+    //     const response = await fetch(pokemon.url);
+    //     const data = await response.json();
+    //     return data;
+    // })
+
+    // const finalData = await Promise.all(promises);
+
+    return data;
+}

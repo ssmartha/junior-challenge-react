@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import * as fonts from "../styles/typography"
+import {TextMd} from "../styles/typography"
 
 const CardContainer = styled.div`
     display: flex;
@@ -11,7 +11,7 @@ const CardContainer = styled.div`
     align-items:center;
     box-shadow: 1px 3px 5px 1px rgba(162,159,159,0.75);
     padding: 20px 0px 20px 0px;
-`
+`;
 
 const StyledImage = styled.img`
     width: 300px;
@@ -22,10 +22,13 @@ function PokemonCard({pokemon}){
 
     return(
         <CardContainer>
-            <StyledImage src={pokemon.sprites.front_default}/>
-            <fonts.TextMd style={{maxWidth:"280px"}}>
+            <StyledImage 
+            src={pokemon.sprites.front_default}
+            alt={`Pokemon ${pokemon?.name}`}
+            />
+            <TextMd style={{maxWidth:"280px", color:"#000000"}}>
                 {pokemon.name}
-            </fonts.TextMd>
+            </TextMd>
         </CardContainer>
     );
 }

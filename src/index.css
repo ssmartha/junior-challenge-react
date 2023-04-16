@@ -10,3 +10,7 @@ body {
 code {
   font-family: 'Press Start 2P', cursive;
 }
+
+a {
+  text-decoration: none;
+}

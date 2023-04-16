@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import image1 from "../assets/images/pokemon-logo.png";
-import * as fonts from "../styles/typography";
+import {TextMd} from "../styles/typography";
 
 const MainContainer = styled.div`
     display:flex;
@@ -14,7 +14,7 @@ function Header(){
     return (
        <MainContainer>
             <img src={image1}/>
-            <fonts.TextMd> Ready to discover the details of your pokemons!</fonts.TextMd>
+            <TextMd> Ready to discover the details of your pokemons!</TextMd>
        </MainContainer> 
     );
 }

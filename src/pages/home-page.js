@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -23,16 +24,19 @@ const Pagination = styled.div`
 `
 
 const PokemonsListContainer= styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
     gap: 1rem;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1082px;
 `
 
 function HomePage(){
     const [page, setPage]= useState(1);
     const [startingRange, setStartingRange] = useState(0);
-    const [pokemonsList, setPokemonsList]= useState(null)
+    const [pokemonsList, setPokemonsList]= useState(null);
 
     useEffect(()=>{
         getPokemonsData(startingRange)
@@ -72,7 +76,13 @@ function HomePage(){
           </Pagination>
           <PokemonsListContainer>
             {pokemonsList? pokemonsList.map((pokemon)=>(
-              <PokemonCard pokemon={pokemon}/>))
+                <Link to={`/pokemon/${pokemon.id}`}>
+                  <PokemonCard 
+                  pokemon={pokemon} 
+                  key={pokemon.id}
+                  />
+                </Link>
+                ))
               :
               <></>}
           </PokemonsListContainer>
