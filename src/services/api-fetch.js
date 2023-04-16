@@ -1,7 +1,7 @@
 import { BASE_URI } from "../config"
 
-export async function getPokemonsData(startingRange, finalRange){
-    const response = await fetch(`${BASE_URI}pokemon?limit=${finalRange}&offset=${startingRange}`)
+export async function getPokemonsData(startingRange){
+    const response = await fetch(`${BASE_URI}pokemon?limit=9&offset=${startingRange}`)
     const data = await response.json();
     
     const promises = data.results.map(async(pokemon)=>{
