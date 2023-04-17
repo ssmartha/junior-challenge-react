@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  frontend:
+    build: .
+    ports:
+      - "3000:3000"
+
+  api:
+    image: node:12
+    volumes:
+      - ./api:/app
+    working_dir: /app
+    command: npm start
